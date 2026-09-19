@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEO/GEO Toolkit — Être 1er sur Google et cité par les IA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%230f9d78' stroke-width='12'/%3E%3Ccircle cx='50' cy='50' r='14' fill='%230f9d78'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">◎</span>
+    <div>
+      <h1>SEO/GEO Toolkit</h1>
+      <p>Méthode 80/20 — ranker sur Google &amp; être cité par ChatGPT, Perplexity, Claude…</p>
+    </div>
+  </div>
+  <button id="themeToggle" class="ghost-btn" title="Changer de thème">🌓</button>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button data-tab="guide" class="tab active">Guide 2080</button>
+  <button data-tab="keywords" class="tab">Mots-clés</button>
+  <button data-tab="title" class="tab">Title Lab</button>
+  <button data-tab="gsc" class="tab">GSC Quick Wins</button>
+  <button data-tab="cannibal" class="tab">Cannibalisation</button>
+  <button data-tab="linking" class="tab">Maillage interne</button>
+  <button data-tab="authority" class="tab">Autorité &amp; Netlinking</button>
+  <button data-tab="geo" class="tab">GEO</button>
+  <button data-tab="plan" class="tab">Plan d'action</button>
+</nav>
+
+<main>
+
+<!-- GUIDE -->
+<section class="panel active" id="panel-guide">
+  <h2>La méthode en 7 étapes (extraite de la masterclass Paul VG — chatSEO)</h2>
+  <p class="lead">Le principe central : cibler des mots-clés où l'internaute a « la carte bancaire à la main », pas du trafic pour l'ego. Tout ce qui suit sert ce seul objectif, en SEO comme en GEO.</p>
+  <ol class="guide-steps">
+    <li><b>Mots-clés business</b> — identifier des patterns (service + ville, service + CMS, meilleur + service + année…) qui trahissent une intention d'achat, pas juste informationnelle. Onglet <i>Mots-clés</i>.</li>
+    <li><b>Analyse SERP</b> — regarder ce que Google fait déjà remonter (page catégorie/LP business vs article de blog informationnel) pour savoir quel type de page créer.</li>
+    <li><b>Title tag</b> — la balise la plus puissante du SEO. Mot-clé principal + secondaires + un boost de « sexiness » (chiffre, année, promesse). Onglet <i>Title Lab</i>.</li>
+    <li><b>Créer ou optimiser ?</b> — avant de publier une nouvelle page, vérifier dans Google Search Console si une page existe déjà avec des impressions/clics sur ce mot-clé. Sinon → nouvelle page. Sinon on cannibalise. Onglets <i>GSC Quick Wins</i> et <i>Cannibalisation</i>.</li>
+    <li><b>Structure de page</b> — copier ce qui marche chez les 3 premiers résultats, en mieux : preuve sociale, photo humaine, prix, méthodologie, FAQ, avis nommés, vidéo. Priorité : répondre à l'intention réelle de l'utilisateur.</li>
+    <li><b>Maillage interne + autorité</b> — chaque nouvelle page doit recevoir au moins 5 liens internes ; l'autorité de domaine (backlinks, présence multi-canal) permet d'attaquer des mots-clés plus concurrentiels. Onglets <i>Maillage interne</i> et <i>Autorité &amp; Netlinking</i>.</li>
+    <li><b>GEO</b> — les IA (ChatGPT, Perplexity, Claude…) tapent elles-mêmes des requêtes du type « meilleur [service] [ville] 2026 » dans Google pour répondre. Se positionner dessus, apparaître dans des classements tiers, structurer la donnée. Onglet <i>GEO</i>.</li>
+  </ol>
+  <div class="callout">
+    <b>Répéter, c'est la stratégie.</b> Une fois une page « template » qui marche (ex : consultant SEO + Paris), on duplique le pattern sur toutes les villes/variantes pertinentes — sans spammer d'un coup si le site est jeune (autorité insuffisante = pages qui stagnent en page 4).
+  </div>
+  <div class="callout warn">
+    <b>Ce que cet outil ne fait pas :</b> manipulation de CTR (achat de clics), auto-classement trompeur (« je me mets 1er dans mon propre classement »), et achat de backlinks — méthodes évoquées dans la transcription mais risquées (pénalisables) ou éthiquement limites. Cet outil se concentre sur les leviers solides et reproductibles.
+  </div>
+</section>
+
+<!-- KEYWORDS -->
+<section class="panel" id="panel-keywords">
+  <h2>Générateur de patterns de mots-clés business</h2>
+  <p class="lead">Combine un mot-clé racine avec des modificateurs à forte intention d'achat (le « 2080 » du ciblage).</p>
+  <div class="grid2">
+    <div class="card">
+      <label>Mot-clé racine (ex : consultant seo, plombier, table basse)</label>
+      <input type="text" id="kwRoot" placeholder="consultant seo">
+      <label>Modificateurs — Villes (1 par ligne)</label>
+      <textarea id="kwCities" rows="6">Paris
+Lyon
+Marseille
+Toulouse
+Nice
+Nantes
+Lille
+Bordeaux
+Strasbourg
+Rennes
+Montpellier</textarea>
+      <label>Modificateurs — Qualificatifs business (1 par ligne)</label>
+      <textarea id="kwQualifiers" rows="6">freelance
+prix
+tarif
+avis
+comparatif
+pas cher
+devis gratuit</textarea>
+      <label>Modificateurs — GEO (année dynamique incluse)</label>
+      <textarea id="kwGeo" rows="3">meilleur
+top</textarea>
+      <div class="row">
+        <button id="btnGenKw" class="primary-btn">Générer les combinaisons</button>
+        <button id="btnExportKw" class="ghost-btn">Exporter en CSV</button>
+      </div>
+    </div>
+    <div class="card">
+      <label>Résultat (<span id="kwCount">0</span> mots-clés)</label>
+      <div id="kwResult" class="result-list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TITLE LAB -->
+<section class="panel" id="panel-title">
+  <h2>Title Lab — la balise la plus puissante du SEO</h2>
+  <p class="lead">Un title trop long est tronqué dans les résultats Google (≈ 580px sur desktop). Composez, vérifiez la largeur en pixels, et boostez le CTR.</p>
+  <div class="grid2">
+    <div class="card">
+      <label>Mot-clé principal</label>
+      <input type="text" id="titleMain" placeholder="Consultant SEO Paris">
+      <label>Mot(s)-clé(s) secondaire(s), séparés par des virgules</label>
+      <input type="text" id="titleSecondary" placeholder="Freelance SEO, Meilleur consultant SEO">
+      <label>Booster de sexiness (optionnel)</label>
+      <input type="text" id="titleBoost" placeholder="★ Devis gratuit en 24h">
+      <label>Marque / suffixe (optionnel)</label>
+      <input type="text" id="titleBrand" placeholder="| Paul VG">
+      <button id="btnBuildTitle" class="primary-btn">Construire le title</button>
+    </div>
+    <div class="card">
+      <label>Aperçu SERP</label>
+      <div class="serp-preview">
+        <div class="serp-url">www.votresite.fr › consultant-seo-paris</div>
+        <div class="serp-title" id="serpTitlePreview">Votre title apparaîtra ici</div>
+        <div class="serp-desc">Votre méta-description apparaîtra ici pour donner envie de cliquer.</div>
+      </div>
+      <label>Largeur en pixels <span id="pxValue">0 / 580px</span></label>
+      <div class="pixel-bar"><div id="pixelFill" class="pixel-fill"></div></div>
+      <p id="pixelWarning" class="hint"></p>
+      <label>Variante GEO (pour être repris par les IA)</label>
+      <input type="text" id="titleGeoOut" readonly>
+      <label>Méta-description</label>
+      <textarea id="metaDesc" rows="3" placeholder="Écrivez une méta-description vendeuse..."></textarea>
+      <p class="hint"><span id="metaLen">0</span>/160 caractères — la métadesc influence peu le ranking mais beaucoup le CTR.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GSC -->
+<section class="panel" id="panel-gsc">
+  <h2>GSC Quick Wins — créer une nouvelle page ou optimiser l'existante ?</h2>
+  <p class="lead">Exportez depuis Google Search Console → Performances → onglet <i>Pages</i> → Exporter → CSV. Aucune donnée n'est envoyée où que ce soit : tout se passe dans votre navigateur.</p>
+  <div class="card">
+    <input type="file" id="gscFile" accept=".csv">
+    <div class="row">
+      <label>Seuil impressions minimum <input type="number" id="gscMinImpr" value="50" style="width:90px"></label>
+      <label>Position min <input type="number" id="gscPosMin" value="4" style="width:70px"></label>
+      <label>Position max <input type="number" id="gscPosMax" value="20" style="width:70px"></label>
+      <button id="btnParseGsc" class="primary-btn">Analyser</button>
+    </div>
+    <p class="hint">Logique : une page déjà dans le top 20 avec beaucoup d'impressions mais peu de clics est un <b>quick win</b> — optimisez title/CTR/contenu plutôt que de créer une page concurrente (cannibalisation).</p>
+  </div>
+  <div class="card">
+    <table class="data-table" id="gscTable">
+      <thead><tr><th>Page</th><th>Clics</th><th>Impressions</th><th>CTR</th><th>Position</th><th>Verdict</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- CANNIBAL -->
+<section class="panel" id="panel-cannibal">
+  <h2>Détecteur de cannibalisation</h2>
+  <p class="lead">Plusieurs pages qui se battent sur le même mot-clé se tirent mutuellement vers le bas. Listez les URLs candidates pour un même mot-clé cible.</p>
+  <div class="card">
+    <label>Mot-clé cible</label>
+    <input type="text" id="canniKw" placeholder="consultant seo paris">
+    <label>URLs de votre site pouvant se positionner dessus (1 par ligne)</label>
+    <textarea id="canniUrls" rows="5" placeholder="/consultant-seo-paris&#10;/blog/pourquoi-consultant-seo&#10;/services/seo-paris"></textarea>
+    <button id="btnCheckCanni" class="primary-btn">Vérifier</button>
+    <div id="canniResult" class="result-box"></div>
+  </div>
+</section>
+
+<!-- LINKING -->
+<section class="panel" id="panel-linking">
+  <h2>Maillage interne</h2>
+  <p class="lead">Règle donnée dans la vidéo : viser au minimum <b>5 liens internes</b> vers chaque page cible, avec une ancre de lien correspondant au mot-clé de la page de destination.</p>
+  <div class="card">
+    <label>Page cible</label>
+    <input type="text" id="linkTarget" placeholder="/consultant-seo-paris">
+    <label>Pages qui pointent vers elle + ancre utilisée (une par ligne, format : url-source | ancre)</label>
+    <textarea id="linkSources" rows="6" placeholder="/ | Consultant SEO Paris&#10;/blog/article-1 | découvrez mon offre&#10;/footer-liens | Consultant SEO Paris"></textarea>
+    <button id="btnCheckLinking" class="primary-btn">Évaluer</button>
+    <div id="linkResult" class="result-box"></div>
+  </div>
+</section>
+
+<!-- AUTHORITY -->
+<section class="panel" id="panel-authority">
+  <h2>Autorité de domaine &amp; accessibilité d'un mot-clé</h2>
+  <p class="lead">Les scores (DR d'Ahrefs, AS de Semrush, TF de Majestic) sont des estimations propriétaires, pas une vérité absolue — à utiliser en tendance, pas en obsession.</p>
+  <div class="grid2">
+    <div class="card">
+      <label>Votre autorité de domaine estimée (DR/AS, 0-100)</label>
+      <input type="number" id="authDR" min="0" max="100" value="30">
+      <label>Difficulté du mot-clé visé (KD, 0-100)</label>
+      <input type="number" id="authKD" min="0" max="100" value="40">
+      <button id="btnCheckAuth" class="primary-btn">Évaluer l'accessibilité</button>
+      <div id="authResult" class="result-box"></div>
+    </div>
+    <div class="card">
+      <h3>Checklist netlinking (2080)</h3>
+      <div id="netlinkChecklist" class="checklist"></div>
+    </div>
+  </div>
+</section>
+
+<!-- GEO -->
+<section class="panel" id="panel-geo">
+  <h2>GEO — être cité par ChatGPT, Perplexity, Claude…</h2>
+  <p class="lead">Différence clé avec le SEO classique : aucune donnée de volume fiable. Les IA cherchent des requêtes fraîches type « meilleur [service] [ville] <span id="geoYear1"></span> » avant de répondre — on optimise donc pour <i>ces</i> requêtes-relais, pas pour le prompt final de l'utilisateur.</p>
+  <div class="card">
+    <h3>Checklist GEO</h3>
+    <div id="geoChecklist" class="checklist"></div>
+  </div>
+  <div class="card">
+    <h3>Testez votre visibilité GEO manuellement</h3>
+    <p>Ouvrez une fenêtre de navigation privée dans ChatGPT / Perplexity / Claude et posez une question naturelle que taperait un vrai client (pas juste le mot-clé). Notez si votre marque est citée, et quelle est la source citée en retour.</p>
+    <label>Générer des prompts de test à partir d'un mot-clé business</label>
+    <input type="text" id="geoPromptSeed" placeholder="meilleur consultant seo Lyon">
+    <button id="btnGeoPrompts" class="primary-btn">Générer des prompts réalistes</button>
+    <div id="geoPromptsOut" class="result-box"></div>
+  </div>
+  <div class="card">
+    <h3>Générateur de title GEO</h3>
+    <label>Mot-clé de service</label>
+    <input type="text" id="geoTitleService" placeholder="consultant seo">
+    <label>Ville / zone (optionnel)</label>
+    <input type="text" id="geoTitleCity" placeholder="Lyon">
+    <button id="btnGeoTitle" class="primary-btn">Générer</button>
+    <div id="geoTitleOut" class="result-box"></div>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section class="panel" id="panel-plan">
+  <h2>Plan d'action hebdomadaire</h2>
+  <p class="lead">La recommandation de la vidéo : une habitude récurrente courte (10-30 min/semaine), pas des sessions marathon. Créez ou optimisez 1 à 2 pages par semaine, mesurez, répétez.</p>
+  <div class="card">
+    <div class="row">
+      <input type="text" id="taskInput" placeholder="Ex : optimiser le title de /consultant-seo-paris">
+      <select id="taskCategory">
+        <option>Mots-clés</option>
+        <option>Title</option>
+        <option>Création/optimisation de page</option>
+        <option>Maillage interne</option>
+        <option>Netlinking</option>
+        <option>GEO</option>
+      </select>
+      <button id="btnAddTask" class="primary-btn">Ajouter</button>
+    </div>
+    <ul id="taskList" class="task-list"></ul>
+    <p class="hint"><span id="taskDone">0</span>/<span id="taskTotal">0</span> tâches complétées — historique sauvegardé localement dans votre navigateur.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Outil basé sur la méthode partagée par Paul VG (chatSEO) dans le podcast Open Source. 100% local, aucune donnée envoyée à un serveur.</p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
