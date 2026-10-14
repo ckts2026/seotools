@@ -1,0 +1,2634 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 5,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"s1\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/seotools/videos/punchline-pluie-motion/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"s1\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"s2\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/seotools/videos/punchline-pluie-motion/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"s2\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"s3\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/seotools/videos/punchline-pluie-motion/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"s3\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"s4\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#s4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/seotools/videos/punchline-pluie-motion/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"s4\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"water\"> is a timeline element that contains nested <svg>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#water",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/seotools/videos/punchline-pluie-motion/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"water\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 56,
+    "findings": [
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 0.528,
+        "selector": "#rain > div:nth-of-type(2)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 355.66,
+          "top": -73.53,
+          "right": 358.66,
+          "bottom": 101.69,
+          "width": 3,
+          "height": 175.22
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 73.53
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 355.66,
+          "y": -73.53,
+          "width": 3,
+          "height": 175.22
+        },
+        "firstSeen": 0.528,
+        "lastSeen": 1.583,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          0.528,
+          1.583
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 0.528,
+        "selector": "#rain > div:nth-of-type(8)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 462.73,
+          "top": -67.72,
+          "right": 465.73,
+          "bottom": 69.89,
+          "width": 3,
+          "height": 137.61
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 67.72
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 462.73,
+          "y": -67.72,
+          "width": 3,
+          "height": 137.61
+        },
+        "firstSeen": 0.528,
+        "lastSeen": 6.861,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          0.528,
+          6.861
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 0.528,
+        "selector": "#rain > div:nth-of-type(37)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 179.38,
+          "top": -75.12,
+          "right": 182.38,
+          "bottom": 86.33,
+          "width": 3,
+          "height": 161.45
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 75.12
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 179.38,
+          "y": -75.12,
+          "width": 3,
+          "height": 161.45
+        },
+        "firstSeen": 0.528,
+        "lastSeen": 0.528,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          0.528
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 1.583,
+        "selector": "#rain > div:nth-of-type(4)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 753.88,
+          "top": -63.5,
+          "right": 756.88,
+          "bottom": 139.75,
+          "width": 3,
+          "height": 203.25
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 63.5
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 753.88,
+          "y": -63.5,
+          "width": 3,
+          "height": 203.25
+        },
+        "firstSeen": 1.583,
+        "lastSeen": 4.75,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          1.583,
+          2.639,
+          3.694,
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 1.583,
+        "selector": "#rain > div:nth-of-type(14)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 932.05,
+          "top": -39.7,
+          "right": 935.05,
+          "bottom": 123.55,
+          "width": 3,
+          "height": 163.25
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 39.7
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 932.05,
+          "y": -39.7,
+          "width": 3,
+          "height": 163.25
+        },
+        "firstSeen": 1.583,
+        "lastSeen": 7.917,
+        "occurrences": 6,
+        "heldMs": 0,
+        "times": [
+          1.583,
+          2.639,
+          3.694,
+          5.806,
+          6.861,
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 1.583,
+        "selector": "#rain > div:nth-of-type(15)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 744.11,
+          "top": -49.85,
+          "right": 747.11,
+          "bottom": 120.93,
+          "width": 3,
+          "height": 170.78
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 49.85
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 744.11,
+          "y": -49.85,
+          "width": 3,
+          "height": 170.78
+        },
+        "firstSeen": 1.583,
+        "lastSeen": 8.972,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          1.583,
+          8.972
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 1.583,
+        "selector": "#rain > div:nth-of-type(22)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 666.17,
+          "top": -55.65,
+          "right": 669.17,
+          "bottom": 34.6,
+          "width": 3,
+          "height": 90.25
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 55.65
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 666.17,
+          "y": -55.65,
+          "width": 3,
+          "height": 90.25
+        },
+        "firstSeen": 1.583,
+        "lastSeen": 1.583,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.583
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 1.583,
+        "selector": "#rain > div:nth-of-type(30)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 1072.16,
+          "top": -111.8,
+          "right": 1075.16,
+          "bottom": 116.02,
+          "width": 3,
+          "height": 227.81
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 111.8
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1072.16,
+          "y": -111.8,
+          "width": 3,
+          "height": 227.81
+        },
+        "firstSeen": 1.583,
+        "lastSeen": 2.639,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          1.583,
+          2.639
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 3.5,
+        "selector": "#s2 > div:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 382.8,
+          "top": 796.33,
+          "right": 715.36,
+          "bottom": 987.69,
+          "width": 332.56,
+          "height": 191.36
+        },
+        "containerSelector": "#s2 > div:nth-of-type(2) > span:nth-of-type(1)",
+        "text": "jours",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 382.8,
+          "y": 796.33,
+          "width": 332.56,
+          "height": 191.36
+        },
+        "firstSeen": 3.5,
+        "lastSeen": 3.5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.5
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 3.694,
+        "selector": "#rain > div:nth-of-type(3)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 686.78,
+          "top": 1905.43,
+          "right": 689.78,
+          "bottom": 2104.95,
+          "width": 3,
+          "height": 199.52
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 184.95
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 686.78,
+          "y": 1905.43,
+          "width": 3,
+          "height": 199.52
+        },
+        "firstSeen": 3.694,
+        "lastSeen": 3.694,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.694
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 3.694,
+        "selector": "#rain > div:nth-of-type(5)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 872,
+          "top": 1732.05,
+          "right": 875,
+          "bottom": 1969.63,
+          "width": 3,
+          "height": 237.58
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 49.63
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 872,
+          "y": 1732.05,
+          "width": 3,
+          "height": 237.58
+        },
+        "firstSeen": 3.694,
+        "lastSeen": 6.861,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          3.694,
+          4.75,
+          5.806,
+          6.861
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 3.694,
+        "selector": "#rain > div:nth-of-type(7)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 362.2,
+          "top": 1816.16,
+          "right": 365.2,
+          "bottom": 1965.71,
+          "width": 3,
+          "height": 149.55
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 45.71
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 362.2,
+          "y": 1816.16,
+          "width": 3,
+          "height": 149.55
+        },
+        "firstSeen": 3.694,
+        "lastSeen": 3.694,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.694
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 3.694,
+        "selector": "#rain > div:nth-of-type(17)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 947.75,
+          "top": -182.44,
+          "right": 950.75,
+          "bottom": 34.7,
+          "width": 3,
+          "height": 217.14
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 182.44
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 947.75,
+          "y": -182.44,
+          "width": 3,
+          "height": 217.14
+        },
+        "firstSeen": 3.694,
+        "lastSeen": 4.75,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          3.694,
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 3.694,
+        "selector": "#rain > div:nth-of-type(26)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 610.5,
+          "top": -138.32,
+          "right": 613.5,
+          "bottom": 106.67,
+          "width": 3,
+          "height": 244.98
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 138.32
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 610.5,
+          "y": -138.32,
+          "width": 3,
+          "height": 244.98
+        },
+        "firstSeen": 3.694,
+        "lastSeen": 7.917,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          3.694,
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 3.694,
+        "selector": "#rain > div:nth-of-type(39)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 585.02,
+          "top": -97.37,
+          "right": 588.02,
+          "bottom": 40.45,
+          "width": 3,
+          "height": 137.81
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 97.37
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 585.02,
+          "y": -97.37,
+          "width": 3,
+          "height": 137.81
+        },
+        "firstSeen": 3.694,
+        "lastSeen": 4.75,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          3.694,
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 3.694,
+        "selector": "#rain > div:nth-of-type(68)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 1031.45,
+          "top": -132.48,
+          "right": 1034.45,
+          "bottom": 71.88,
+          "width": 3,
+          "height": 204.36
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 132.48
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1031.45,
+          "y": -132.48,
+          "width": 3,
+          "height": 204.36
+        },
+        "firstSeen": 3.694,
+        "lastSeen": 8.972,
+        "occurrences": 6,
+        "heldMs": 0,
+        "times": [
+          3.694,
+          4.75,
+          5.806,
+          6.861,
+          7.917,
+          8.972
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 3.694,
+        "selector": "#rain > div:nth-of-type(81)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 419.06,
+          "top": -137.27,
+          "right": 422.06,
+          "bottom": 64.77,
+          "width": 3,
+          "height": 202.05
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 137.27
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 419.06,
+          "y": -137.27,
+          "width": 3,
+          "height": 202.05
+        },
+        "firstSeen": 3.694,
+        "lastSeen": 3.694,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.694
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 3.694,
+        "selector": "#rain > div:nth-of-type(87)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 343.67,
+          "top": -181.82,
+          "right": 346.67,
+          "bottom": 31.07,
+          "width": 3,
+          "height": 212.89
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 181.82
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 343.67,
+          "y": -181.82,
+          "width": 3,
+          "height": 212.89
+        },
+        "firstSeen": 3.694,
+        "lastSeen": 3.694,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.694
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(1)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 994.42,
+          "top": -64.9,
+          "right": 997.42,
+          "bottom": 25.1,
+          "width": 3,
+          "height": 90
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 64.9
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 994.42,
+          "y": -64.9,
+          "width": 3,
+          "height": 90
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 4.75,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(9)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 948.08,
+          "top": 1850.63,
+          "right": 951.08,
+          "bottom": 2057.3,
+          "width": 3,
+          "height": 206.67
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 137.3
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 948.08,
+          "y": 1850.63,
+          "width": 3,
+          "height": 206.67
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 4.75,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(45)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 728.89,
+          "top": 1863.78,
+          "right": 731.89,
+          "bottom": 1986.12,
+          "width": 3,
+          "height": 122.34
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 66.12
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 728.89,
+          "y": 1863.78,
+          "width": 3,
+          "height": 122.34
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 4.75,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(52)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 839.66,
+          "top": -58.46,
+          "right": 842.66,
+          "bottom": 179.38,
+          "width": 3,
+          "height": 237.84
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 58.46
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 839.66,
+          "y": -58.46,
+          "width": 3,
+          "height": 237.84
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 4.75,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(57)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 85.55,
+          "top": 1832.1,
+          "right": 88.55,
+          "bottom": 1979.33,
+          "width": 3,
+          "height": 147.23
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 59.33
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 85.55,
+          "y": 1832.1,
+          "width": 3,
+          "height": 147.23
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 4.75,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(59)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 112.44,
+          "top": -154.59,
+          "right": 115.44,
+          "bottom": 63.16,
+          "width": 3,
+          "height": 217.75
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 154.59
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 112.44,
+          "y": -154.59,
+          "width": 3,
+          "height": 217.75
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 5.806,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          4.75,
+          5.806
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(60)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 578.73,
+          "top": -118.77,
+          "right": 581.73,
+          "bottom": 85.06,
+          "width": 3,
+          "height": 203.83
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 118.77
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 578.73,
+          "y": -118.77,
+          "width": 3,
+          "height": 203.83
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 5.806,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          4.75,
+          5.806
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(72)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 745.94,
+          "top": -65.14,
+          "right": 748.94,
+          "bottom": 33.29,
+          "width": 3,
+          "height": 98.44
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 65.14
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 745.94,
+          "y": -65.14,
+          "width": 3,
+          "height": 98.44
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 4.75,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(73)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 113.02,
+          "top": -76.61,
+          "right": 116.02,
+          "bottom": 142.13,
+          "width": 3,
+          "height": 218.73
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 76.61
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 113.02,
+          "y": -76.61,
+          "width": 3,
+          "height": 218.73
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 4.75,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(75)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 205.47,
+          "top": -115.87,
+          "right": 208.47,
+          "bottom": 111.43,
+          "width": 3,
+          "height": 227.3
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 115.87
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 205.47,
+          "y": -115.87,
+          "width": 3,
+          "height": 227.3
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 7.917,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          4.75,
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 4.75,
+        "selector": "#rain > div:nth-of-type(76)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 1031.16,
+          "top": -169.07,
+          "right": 1034.16,
+          "bottom": 72.71,
+          "width": 3,
+          "height": 241.78
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 169.07
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1031.16,
+          "y": -169.07,
+          "width": 3,
+          "height": 241.78
+        },
+        "firstSeen": 4.75,
+        "lastSeen": 4.75,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          4.75
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 5.806,
+        "selector": "#rain > div:nth-of-type(6)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 695.25,
+          "top": -73.73,
+          "right": 698.25,
+          "bottom": 126.43,
+          "width": 3,
+          "height": 200.16
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 73.73
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 695.25,
+          "y": -73.73,
+          "width": 3,
+          "height": 200.16
+        },
+        "firstSeen": 5.806,
+        "lastSeen": 5.806,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.806
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 5.806,
+        "selector": "#rain > div:nth-of-type(13)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 574.19,
+          "top": -75.14,
+          "right": 577.19,
+          "bottom": 68.07,
+          "width": 3,
+          "height": 143.2
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 75.14
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 574.19,
+          "y": -75.14,
+          "width": 3,
+          "height": 143.2
+        },
+        "firstSeen": 5.806,
+        "lastSeen": 5.806,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.806
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 5.806,
+        "selector": "#rain > div:nth-of-type(31)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 785.88,
+          "top": 1891.75,
+          "right": 788.88,
+          "bottom": 2021.46,
+          "width": 3,
+          "height": 129.7
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 101.46
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 785.88,
+          "y": 1891.75,
+          "width": 3,
+          "height": 129.7
+        },
+        "firstSeen": 5.806,
+        "lastSeen": 5.806,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.806
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 5.806,
+        "selector": "#rain > div:nth-of-type(33)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 361.81,
+          "top": 1756.33,
+          "right": 364.81,
+          "bottom": 1963.9,
+          "width": 3,
+          "height": 207.58
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 43.9
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 361.81,
+          "y": 1756.33,
+          "width": 3,
+          "height": 207.58
+        },
+        "firstSeen": 5.806,
+        "lastSeen": 5.806,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.806
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 5.806,
+        "selector": "#rain > div:nth-of-type(35)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 215.5,
+          "top": 1752.73,
+          "right": 218.5,
+          "bottom": 1989.65,
+          "width": 3,
+          "height": 236.92
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 69.65
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 215.5,
+          "y": 1752.73,
+          "width": 3,
+          "height": 236.92
+        },
+        "firstSeen": 5.806,
+        "lastSeen": 8.972,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          5.806,
+          8.972
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 5.806,
+        "selector": "#rain > div:nth-of-type(38)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 817.7,
+          "top": -141.91,
+          "right": 820.7,
+          "bottom": 29.17,
+          "width": 3,
+          "height": 171.08
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 141.91
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 817.7,
+          "y": -141.91,
+          "width": 3,
+          "height": 171.08
+        },
+        "firstSeen": 5.806,
+        "lastSeen": 5.806,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.806
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 5.806,
+        "selector": "#rain > div:nth-of-type(40)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 712.33,
+          "top": 1843.02,
+          "right": 715.33,
+          "bottom": 1970.72,
+          "width": 3,
+          "height": 127.7
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 50.72
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 712.33,
+          "y": 1843.02,
+          "width": 3,
+          "height": 127.7
+        },
+        "firstSeen": 5.806,
+        "lastSeen": 5.806,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.806
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 5.806,
+        "selector": "#rain > div:nth-of-type(64)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 1.42,
+          "top": 1864.22,
+          "right": 4.42,
+          "bottom": 2101.56,
+          "width": 3,
+          "height": 237.34
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 181.56
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1.42,
+          "y": 1864.22,
+          "width": 3,
+          "height": 237.34
+        },
+        "firstSeen": 5.806,
+        "lastSeen": 6.861,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          5.806,
+          6.861
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 5.806,
+        "selector": "#rain > div:nth-of-type(70)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 242.86,
+          "top": -31.56,
+          "right": 245.86,
+          "bottom": 156.55,
+          "width": 3,
+          "height": 188.11
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 31.56
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 242.86,
+          "y": -31.56,
+          "width": 3,
+          "height": 188.11
+        },
+        "firstSeen": 5.806,
+        "lastSeen": 5.806,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.806
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 5.806,
+        "selector": "#rain > div:nth-of-type(77)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 939.33,
+          "top": -151.97,
+          "right": 942.33,
+          "bottom": 88.54,
+          "width": 3,
+          "height": 240.52
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 151.97
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 939.33,
+          "y": -151.97,
+          "width": 3,
+          "height": 240.52
+        },
+        "firstSeen": 5.806,
+        "lastSeen": 5.806,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5.806
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 6.861,
+        "selector": "#rain > div:nth-of-type(20)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 955.33,
+          "top": 1853.36,
+          "right": 958.33,
+          "bottom": 2090.85,
+          "width": 3,
+          "height": 237.48
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 170.85
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 955.33,
+          "y": 1853.36,
+          "width": 3,
+          "height": 237.48
+        },
+        "firstSeen": 6.861,
+        "lastSeen": 6.861,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          6.861
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 6.861,
+        "selector": "#rain > div:nth-of-type(32)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 957.94,
+          "top": 1847.33,
+          "right": 960.94,
+          "bottom": 2002.11,
+          "width": 3,
+          "height": 154.78
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 82.11
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 957.94,
+          "y": 1847.33,
+          "width": 3,
+          "height": 154.78
+        },
+        "firstSeen": 6.861,
+        "lastSeen": 6.861,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          6.861
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 6.861,
+        "selector": "#rain > div:nth-of-type(48)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 549.41,
+          "top": -133.2,
+          "right": 552.41,
+          "bottom": 104.88,
+          "width": 3,
+          "height": 238.08
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 133.2
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 549.41,
+          "y": -133.2,
+          "width": 3,
+          "height": 238.08
+        },
+        "firstSeen": 6.861,
+        "lastSeen": 6.861,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          6.861
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 6.861,
+        "selector": "#rain > div:nth-of-type(80)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 505.38,
+          "top": -184.04,
+          "right": 508.38,
+          "bottom": 6.65,
+          "width": 3,
+          "height": 190.69
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 184.04
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 505.38,
+          "y": -184.04,
+          "width": 3,
+          "height": 190.69
+        },
+        "firstSeen": 6.861,
+        "lastSeen": 7.917,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.861,
+          7.917
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 7,
+        "selector": "#s4 > div:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 395.39,
+          "top": 743.56,
+          "right": 684.59,
+          "bottom": 943.56,
+          "width": 289.2,
+          "height": 200
+        },
+        "containerSelector": "span.w.xl",
+        "text": "mon",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 395.39,
+          "y": 743.56,
+          "width": 289.2,
+          "height": 200
+        },
+        "firstSeen": 7,
+        "lastSeen": 7,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 7.917,
+        "selector": "#rain > div:nth-of-type(11)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 371.64,
+          "top": 1873.56,
+          "right": 374.64,
+          "bottom": 2022.03,
+          "width": 3,
+          "height": 148.47
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 102.03
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 371.64,
+          "y": 1873.56,
+          "width": 3,
+          "height": 148.47
+        },
+        "firstSeen": 7.917,
+        "lastSeen": 7.917,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 7.917,
+        "selector": "#rain > div:nth-of-type(18)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 165.84,
+          "top": 1838.39,
+          "right": 168.84,
+          "bottom": 1993.47,
+          "width": 3,
+          "height": 155.08
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 73.47
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 165.84,
+          "y": 1838.39,
+          "width": 3,
+          "height": 155.08
+        },
+        "firstSeen": 7.917,
+        "lastSeen": 7.917,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 7.917,
+        "selector": "#rain > div:nth-of-type(23)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 257.08,
+          "top": -140.48,
+          "right": 260.08,
+          "bottom": 59.52,
+          "width": 3,
+          "height": 200
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 140.48
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 257.08,
+          "y": -140.48,
+          "width": 3,
+          "height": 200
+        },
+        "firstSeen": 7.917,
+        "lastSeen": 7.917,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 7.917,
+        "selector": "#rain > div:nth-of-type(29)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 742.89,
+          "top": 1857.21,
+          "right": 745.89,
+          "bottom": 1968.11,
+          "width": 3,
+          "height": 110.91
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 48.11
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 742.89,
+          "y": 1857.21,
+          "width": 3,
+          "height": 110.91
+        },
+        "firstSeen": 7.917,
+        "lastSeen": 7.917,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 7.917,
+        "selector": "#rain > div:nth-of-type(63)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 737.48,
+          "top": -64.15,
+          "right": 740.48,
+          "bottom": 79.93,
+          "width": 3,
+          "height": 144.08
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 64.15
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 737.48,
+          "y": -64.15,
+          "width": 3,
+          "height": 144.08
+        },
+        "firstSeen": 7.917,
+        "lastSeen": 7.917,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 7.917,
+        "selector": "#rain > div:nth-of-type(67)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 638.91,
+          "top": 1866.93,
+          "right": 641.91,
+          "bottom": 2086.82,
+          "width": 3,
+          "height": 219.89
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 166.82
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 638.91,
+          "y": 1866.93,
+          "width": 3,
+          "height": 219.89
+        },
+        "firstSeen": 7.917,
+        "lastSeen": 7.917,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 7.917,
+        "selector": "#rain > div:nth-of-type(71)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 679.84,
+          "top": 1830.85,
+          "right": 682.84,
+          "bottom": 2020.03,
+          "width": 3,
+          "height": 189.19
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 100.03
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 679.84,
+          "y": 1830.85,
+          "width": 3,
+          "height": 189.19
+        },
+        "firstSeen": 7.917,
+        "lastSeen": 7.917,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 7.917,
+        "selector": "#rain > div:nth-of-type(82)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 768.44,
+          "top": -195.76,
+          "right": 771.44,
+          "bottom": 48.16,
+          "width": 3,
+          "height": 243.92
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 195.76
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 768.44,
+          "y": -195.76,
+          "width": 3,
+          "height": 243.92
+        },
+        "firstSeen": 7.917,
+        "lastSeen": 8.972,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          7.917,
+          8.972
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 7.917,
+        "selector": "#rain > div:nth-of-type(86)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 1.72,
+          "top": 1902.51,
+          "right": 4.72,
+          "bottom": 2000.85,
+          "width": 3,
+          "height": 98.34
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 80.85
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1.72,
+          "y": 1902.51,
+          "width": 3,
+          "height": 98.34
+        },
+        "firstSeen": 7.917,
+        "lastSeen": 7.917,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.917
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 8.972,
+        "selector": "#rain > div:nth-of-type(50)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 1073.31,
+          "top": -126.78,
+          "right": 1076.31,
+          "bottom": 40.11,
+          "width": 3,
+          "height": 166.89
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 126.78
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1073.31,
+          "y": -126.78,
+          "width": 3,
+          "height": 166.89
+        },
+        "firstSeen": 8.972,
+        "lastSeen": 8.972,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          8.972
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 8.972,
+        "selector": "#rain > div:nth-of-type(56)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 473.09,
+          "top": -113.44,
+          "right": 476.09,
+          "bottom": 134.67,
+          "width": 3,
+          "height": 248.11
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "top": 113.44
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 473.09,
+          "y": -113.44,
+          "width": 3,
+          "height": 248.11
+        },
+        "firstSeen": 8.972,
+        "lastSeen": 8.972,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          8.972
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 8.972,
+        "selector": "#rain > div:nth-of-type(84)",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 533.98,
+          "top": 1896.84,
+          "right": 536.98,
+          "bottom": 2048.75,
+          "width": 3,
+          "height": 151.91
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "bottom": 128.75
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 533.98,
+          "y": 1896.84,
+          "width": 3,
+          "height": 151.91
+        },
+        "firstSeen": 8.972,
+        "lastSeen": 8.972,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          8.972
+        ]
+      }
+    ],
+    "duration": 9.5,
+    "samples": [
+      0.528,
+      1.583,
+      2.639,
+      3.694,
+      4.75,
+      5.806,
+      6.861,
+      7.917,
+      8.972
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 56,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.528,
+      2.639,
+      4.75,
+      6.861,
+      8.972
+    ],
+    "checked": 11,
+    "passed": 11
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

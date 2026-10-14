@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="vendor/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      :root {
+        --bg-top: #0b1220;
+        --bg-bot: #16263f;
+        --ink: #eef3fa;
+        --rain: #9fc4ee;
+        --accent: #7ec8ff;
+      }
+      html, body {
+        width: 1080px; height: 1920px; overflow: hidden; background: var(--bg-top);
+      }
+      #root {
+        position: relative; width: 1080px; height: 1920px; overflow: hidden;
+        background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bot) 100%);
+        font-family: "Playfair Display", Georgia, "DejaVu Serif", serif;
+      }
+      .layer { position: absolute; inset: 0; }
+      #rain .drop {
+        position: absolute; top: 0; width: 3px; border-radius: 3px;
+        background: linear-gradient(180deg, rgba(159,196,238,0), var(--rain));
+      }
+      .scene {
+        position: absolute; left: 0; width: 1080px; top: 0; height: 1920px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        text-align: center; padding: 0 70px; gap: 6px;
+      }
+      .line { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 30px; }
+      .w {
+        display: inline-block; color: var(--ink); font-size: 150px; font-weight: 700;
+        font-style: italic; line-height: 1.12; letter-spacing: -0.02em;
+        text-shadow: 0 6px 40px rgba(0, 0, 0, 0.45);
+      }
+      .w.em { color: var(--accent); text-shadow: 0 0 50px rgba(126, 200, 255, 0.55); }
+      .w.xl { font-size: 190px; }
+      #water {
+        position: absolute; left: 0; bottom: 0; width: 1080px; height: 1920px;
+      }
+      #water .wave { position: absolute; top: -70px; left: 0; width: 2160px; height: 80px; }
+      #water .body {
+        position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(180deg, rgba(60, 120, 190, 0.4) 0%, rgba(20, 50, 100, 0.5) 100%);
+      }
+      #fade { position: absolute; inset: 0; background: #060b14; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="9.5"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div id="rain" class="layer clip" data-start="0" data-duration="9.5" data-track-index="0"></div>
+
+      <div id="s1" class="scene clip" data-start="0.5" data-duration="2.5" data-track-index="1">
+        <div class="line"><span class="w">J’irai</span><span class="w">pleurer</span></div>
+      </div>
+
+      <div id="s2" class="scene clip" data-start="3" data-duration="2.4" data-track-index="2">
+        <div class="line"><span class="w">les</span><span class="w">jours</span><span class="w">de</span></div>
+        <div class="line"><span class="w em">pluies</span></div>
+      </div>
+
+      <div id="s3" class="scene clip" data-start="5.4" data-duration="1.6" data-track-index="3">
+        <div class="line"><span class="w">pour</span><span class="w em">noyer</span></div>
+      </div>
+
+      <div id="s4" class="scene clip" data-start="6.6" data-duration="2.9" data-track-index="4">
+        <div class="line"><span class="w">mon</span></div>
+        <div class="line"><span class="w xl">chagrin</span></div>
+      </div>
+
+      <div id="water" class="layer clip" data-start="0" data-duration="9.5" data-track-index="5">
+        <svg class="wave" viewBox="0 0 2160 80" preserveAspectRatio="none">
+          <path
+            d="M0 40 Q135 0 270 40 T540 40 T810 40 T1080 40 T1350 40 T1620 40 T1890 40 T2160 40 V80 H0 Z"
+            fill="rgba(60,120,190,0.4)"
+          />
+        </svg>
+        <div class="body"></div>
+      </div>
+
+      <div id="fade" class="layer clip" data-start="0" data-duration="9.5" data-track-index="6"></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const TOTAL = 9.5;
+      gsap.set("#water", { y: 2020 });
+
+      // Deterministic PRNG so every render is identical
+      let seed = 7;
+      const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+
+      // Rain: finite looped streaks (seek-safe), density rises with the story
+      const rain = document.getElementById("rain");
+      const drops = [];
+      for (let i = 0; i < 90; i++) {
+        const d = document.createElement("div");
+        d.className = "drop";
+        const h = 90 + rnd() * 160;
+        d.style.left = rnd() * 1080 + "px";
+        d.style.height = h + "px";
+        d.style.opacity = 0.18 + rnd() * 0.5;
+        rain.appendChild(d);
+        drops.push({ el: d, h, dur: 0.7 + rnd() * 0.6, delay: rnd() * 0.8, i });
+      }
+      drops.forEach(({ el, h, dur, delay, i }) => {
+        const reps = Math.ceil(TOTAL / dur) + 1;
+        // first 40 drops always on; the rest join when the rain "intensifies" at 3s
+        const start = i < 40 ? delay : 3 + delay;
+        tl.fromTo(el, { y: -h - 20 }, { y: 1940, duration: dur, ease: "none", repeat: reps }, start);
+        if (i >= 40) tl.fromTo(el, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.5 }, 3);
+      });
+      tl.fromTo(rain, { opacity: 0 }, { opacity: 1, duration: 0.8 }, 0);
+
+      // Helper: words fall in like drops, with a soft overshoot
+      function dropIn(sel, at, stagger = 0.12) {
+        tl.fromTo(
+          sel + " .w",
+          { y: -220, opacity: 0, filter: "blur(18px)", scaleY: 1.5 },
+          { y: 0, opacity: 1, filter: "blur(0px)", scaleY: 1, duration: 0.55, ease: "back.out(1.6)", stagger },
+          at
+        );
+      }
+      function lift(sel, at) {
+        tl.to(sel + " .w", { y: 60, opacity: 0, filter: "blur(14px)", duration: 0.5, ease: "power2.in", stagger: 0.05 }, at);
+      }
+
+      // S1 — J'irai pleurer
+      dropIn("#s1", 0.6);
+      lift("#s1", 2.5);
+
+      // S2 — les jours de pluies (pluies pulses)
+      dropIn("#s2", 3.1, 0.1);
+      tl.fromTo("#s2 .em", { scale: 1 }, { scale: 1.12, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 1 }, 4.2);
+      lift("#s2", 4.9);
+
+      // S3 — pour noyer ; water starts rising
+      dropIn("#s3", 5.45, 0.18);
+      tl.to("#water", { y: 1180, duration: 1.4, ease: "power1.inOut" }, 5.4);
+      lift("#s3", 6.5);
+
+      // S4 — mon chagrin, then gets submerged
+      tl.fromTo("#s4 .w", { y: -180, opacity: 0, filter: "blur(18px)" },
+        { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.8, ease: "back.out(1.4)", stagger: 0.25 }, 6.7);
+      tl.to("#water", { y: 0, duration: 2.0, ease: "power2.inOut" }, 7.4);
+      tl.to("#s4 .w", { filter: "blur(12px)", opacity: 0.2, y: 120, duration: 1.2, ease: "power2.in" }, 8.0);
+
+      // Water surface drift
+      tl.fromTo("#water .wave", { x: 0 }, { x: -1080, duration: 3, ease: "none", repeat: 3 }, 0);
+
+      // Out
+      tl.to("#fade", { opacity: 1, duration: 0.6, ease: "power1.in" }, 8.9);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
